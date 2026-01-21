@@ -30,7 +30,6 @@ class AuthService
         $stm = $this->connection->prepare("insert into users (email, password, role) values(?,?,?)");
         $stm->execute([$email,$hash,$role]) ;
     }
-
 }
 
 ?>
