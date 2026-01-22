@@ -22,10 +22,17 @@ class AuthService
               return $users ;  
             }    
             return false ;
+        
+       }
+       public function generateRandPass($len =12)
+       {
+        $c = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+";
+        return substr(str_shuffle($c), 0 ,$len) ;
         }
 
     public function createUser($email ,$password ,$role)
     {
+        $password =$this->generateRandPass(12) ;
         $hash = password_hash($password,PASSWORD_DEFAULT) ;
         $stm = $this->connection->prepare("insert into users (email, password, role) values(?,?,?)");
         $stm->execute([$email,$hash,$role]) ;
