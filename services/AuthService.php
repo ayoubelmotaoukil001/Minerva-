@@ -31,7 +31,6 @@ class AuthService
         $stm->execute([$email,$hash,$role]) ;
     }
 
-    
 }
 
 ?>

@@ -1,1 +1,40 @@
+
+# =========================
+# FICHIERS SENSIBLES
+# =========================
+/config/database.php
+.env
+
+# =========================
+# DEPENDANCES
+# =========================
 /vendor/
+
+# =========================
+# CACHE / LOGS / TEMP
+# =========================
+/cache/
+/logs/
+*.log
+*.tmp
+
+# =========================
+# UPLOADS & FICHIERS GENERES
+# =========================
+/public/uploads/
+
+# =========================
+# OS / EDITORS
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# NODE (si utilisé plus tard)
+# =========================
+node_modules/
+package-lock.json
+
