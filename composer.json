@@ -1,0 +1,19 @@
+{
+    "name": "vendor/minerva",
+    "autoload": {
+        "psr-4": {
+            "controllers\\": "controllers/",
+            "models\\": "models/",
+            "services\\": "services/",
+            "core\\": "core/",
+            "config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ayoubelmotaoukil001",
+            "email": "ayoubelmotaoukil001@gmail.com"
+        }
+    ],
+    "require": {}
+}
